@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Auth App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Login to access your dashboard.</p>
+
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Minimum 6 characters" required />
+          </div>
+
+          <div id="message" class="message"></div>
+          <button type="submit">Login</button>
+        </form>
+
+        <div class="link-row">
+          No account? <a href="./signup.html">Create one</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

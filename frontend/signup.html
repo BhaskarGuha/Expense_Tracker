@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Auth App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Create Account</h1>
+        <p class="subtitle">Signup and start using the app.</p>
+
+        <form id="signupForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Minimum 6 characters" required />
+          </div>
+
+          <div id="message" class="message"></div>
+          <button type="submit">Signup</button>
+        </form>
+
+        <div class="link-row">
+          Already have an account? <a href="./index.html">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
